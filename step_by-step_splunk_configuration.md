@@ -3,37 +3,37 @@
 To begin let me show you my adapter settings on my VirtualBox. I have it set to only the internal network.
 Just like our Client computer in the previous lab we will access the internet through our Domain Controller.
 
------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 
-I will install the Ubuntu 24.04.1 Server. This is CLI so it does not include a GUI. This will be the splunk server
+I will install the Ubuntu 24.04.1 Server. This operating system is CLI so it does not include a GUI. This will be our new splunk server.
 
-------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 
 ![Screenshot (185)](https://github.com/user-attachments/assets/37ea78ab-d9bf-4c9e-afb4-772478b4179d)
 
 Click Enter.
 
-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (186)](https://github.com/user-attachments/assets/7faa26ce-ecc3-4d96-82d7-b73afdc3be2f)
 
 Continue witout updating and click Enter.
 
--------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (187)](https://github.com/user-attachments/assets/0c91a1f0-6993-47c5-9220-aacae454e0ec)
 
 Hover over Done and Click Enter.
 
---------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (188)](https://github.com/user-attachments/assets/d7bdeb54-3585-4f09-aeaf-514617b70c34)
 
 Hover over Done and Click Enter.
 
------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (184)](https://github.com/user-attachments/assets/0c5bddcd-5f77-4739-96b1-67b20abb9d39)
 
@@ -41,67 +41,67 @@ Thanks to DHCP installed on our Domain Controller you can see our Splunk server 
 For the sake of the Lab we are going to apply a static IP to the Splunk Server later on in the lab. Hover over Done
 and Click Enter.
 
---------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (190)](https://github.com/user-attachments/assets/4566c011-89cd-4364-b57f-8814ae26e994)
 
 Hover over Done and Click Enter.
 
-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (191)](https://github.com/user-attachments/assets/144eeb2a-f878-4f56-bb45-6a6f0b7cce8a)
 
 Wait for the mirror location to pass the tests and Hover over done and Click Enter.
 
--------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (192)](https://github.com/user-attachments/assets/8fa4b916-3596-4fe6-9f8e-e406cc1dd0b4)
 
 Hover over Done and Click Enter.
 
-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (193)](https://github.com/user-attachments/assets/a5bd5e7e-d7eb-477c-b4b4-fc7033fc9608)
 
 Hover over Done and Click Enter.
 
-------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (194)](https://github.com/user-attachments/assets/27a1b094-7169-4337-a3a4-94cbd0847aee)
 
 Hover over Continue and Click Enter.
 
-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (195)](https://github.com/user-attachments/assets/f4968135-b7a6-49f8-aa71-96cab7950560)
 
 Now enter the information you will use to log-in to the ubuntu server.
 
------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (196)](https://github.com/user-attachments/assets/2d575c56-97c2-4426-ae1d-1bc776e6d5a6)
 
 Hover over Continue and Click Enter.
 
--------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (197)](https://github.com/user-attachments/assets/03acc994-1b8b-40be-8978-599974524188)
 
 You can choose to check or not check install OpenSSH Server in my case I installed it for a future lab. Hover over Done and Press Enter.
 
---------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 
 ![Screenshot (198)](https://github.com/user-attachments/assets/fad659cd-1e39-4a4e-9d01-b0fa60589638)
 
 Scroll Down, hover over Done and press Enter.
 
----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (200)](https://github.com/user-attachments/assets/d4dafe67-e664-4b06-b2bd-f856deb007dc)
 
 Let it install and once it's done you will see the option to Reboot Now. Hover over Reboot Now and press Enter.
 
---------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ![Screenshot (201)](https://github.com/user-attachments/assets/3ee4711e-dff5-4b50-ba3f-59e1c84026cd)
 
