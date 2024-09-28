@@ -399,8 +399,10 @@ Our query brings up Event logs.
 
 ![Screenshot (323)](https://github.com/user-attachments/assets/596752eb-7e66-456b-8636-b0bdbe719192)
 
-If we take a closer look at the event log we can see the 
-LogName = Application
-The host it came from which is DC.githubdomain.com
-As well as a Source and a Source Type. 
-Our configuration has been a Success and we now have event logs being sent to our Splunk Server.
+If we take a closer look at the event log we can see the LogName = Application
+The host it came from which is DC.githubdomain.com, it also gives us a Source and a Source Type. 
+Our configuration has been a Success and we now have event logs being sent to our Splunk Server and our indexes are properly configured. (:
+
+---------------------------------------------------------------------------------------------------
+
+Next Installing and configuring Sysmon LINK
