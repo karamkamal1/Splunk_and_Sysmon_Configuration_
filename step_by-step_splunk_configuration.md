@@ -109,15 +109,10 @@ It will run through an Install Process and reboot. Once it is done you will be g
 
 ---------------------------------------------------------------------------------------------------------------------
 
-![Screenshot (204)](https://github.com/user-attachments/assets/2e2f20c8-af9b-46f5-98d7-c7b0284a9c44)
-
-Now we will install Splunk Enterprise on our Ubuntu Server.
-
-----------------------------------------------------------------------------------------------------------------
 
 ![Screenshot (205)](https://github.com/user-attachments/assets/9740fda3-ac0f-45ba-a47e-3991b2efc544)
 
-We can now choose to Log in or Signup. I already have an account so I will Login.
+Using a web browser we will install Splunk Enterprise using a wget command on our Ubuntu Server. Once on the website we can choose to Log in or Signup. I already have an account so I will Login.
 
 -----------------------------------------------------------------------------------------------------
 
@@ -186,13 +181,15 @@ Enter command [ sudo netplan apply ] and click Enter.
 
 -------------------------------------------------------------------------------------------------------
 
+![Screenshot (258)](https://github.com/user-attachments/assets/7c13c6f3-54b5-4177-bab0-ea5ee12c7375)
+
 We will now change directories into the splunk directory using [ cd /opt/splunk ]. Click Enter.
 
 ---------------------------------------------------------------------------------------------------------
 
 ![Screenshot (259)](https://github.com/user-attachments/assets/ba733d95-792b-4cca-828c-0cfffa4d88ca)
 
-If we use the ls -ls command we can see that files access is restricted to a user named splunk. So we must change our user to the splunk user.
+If we use the ls -la command we can see that files access is restricted to a user named splunk. So we must change our user to the splunk user.
 
 ----------------------------------------------------------------------------------------------------------
 
@@ -202,14 +199,14 @@ We will do this using the command [ sudo - u splunk bash ]. Click Enter.
 
 ------------------------------------------------------------------------------------
 
-![Screenshot (260)](https://github.com/user-attachments/assets/2ca4f4bc-7a28-4eab-960a-8f7ecf619a03)
+![Screenshot (262)](https://github.com/user-attachments/assets/c97bd9c2-3e3e-4c65-8642-a142968ebbdf)
 
 If you look at our username it has now changed from a-kkamal@splunk to splunk@splunk meaning we have succesfully 
 moved accounts to splunk. Now move Directories to bin using [ cd bin ] so we can start splunk enterprise.
 
 -----------------------------------------------------------------------------------------------------
 
-![Screenshot (260)](https://github.com/user-attachments/assets/f623a08a-a6c9-472e-9eaf-c4c8583961c3)
+![Screenshot (263)](https://github.com/user-attachments/assets/a45281c0-0c73-40e1-98b9-2445b3669a33)
 
 To start splunk we will use the command [ ./splunk start ]. Click Enter.
 
