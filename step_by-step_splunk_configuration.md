@@ -405,4 +405,4 @@ Our configuration has been a Success and we now have event logs being sent to ou
 
 ---------------------------------------------------------------------------------------------------
 
-Next Installing and configuring Sysmon LINK
+Next Installing and configuring Sysmon  <a href="https://github.com/karamkamal1/Splunk_Configuration_and_Attack_Log_Analysis/blob/484047318bbb973071013db5b55f50190f2c1f4d/step_by_step_sysmon_configuration.md">LINK</a>
