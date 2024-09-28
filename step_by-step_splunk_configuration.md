@@ -38,7 +38,7 @@ Hover over Done and Click Enter.
 ![Screenshot (184)](https://github.com/user-attachments/assets/0c5bddcd-5f77-4739-96b1-67b20abb9d39)
 
 Thanks to DHCP installed on our Domain Controller you can see our Splunk server is instantly assigned an IP address.
-For the sake of the Lab we are going to apply a static IP to the Splunk Server later on in the lab. Hover over Done
+For the sake of the Lab we are going to apply a static IP to the Splunk Server later on when we edit the [ sudo nano /etc/netplan/50-cloud-init.yaml ]. Hover over Done
 and Click Enter.
 
 -----------------------------------------------------------------------------------------------
@@ -276,3 +276,131 @@ Click Yes.
 ![Screenshot (279)](https://github.com/user-attachments/assets/09756347-5cf7-4bd1-9c33-7a0621bd7d53)
 
 Click Finsh. 
+
+----------------------------------------------------------------------------------------------------
+
+![Screenshot (281)](https://github.com/user-attachments/assets/25486fe6-ca27-43cf-a0e6-7d5fce6a114f)
+
+Now we move one to configuring our inputs.conf file. This file will tell our splunk universal forwarder what events or data we want to send to our splunk server. To do this we are going to begin by opening file explorer and opening our C: drive.
+
+------------------------------------------------------------------------------------------------
+![Screenshot (282)](https://github.com/user-attachments/assets/cb6b911f-ee40-4de8-a002-e2030d3f5081)
+
+Click on Prgram Files > SplunkUniversalForwarder > etc > system > local.
+
+
+---------------------------------------------------------------------------------------------
+
+![Screenshot (287)](https://github.com/user-attachments/assets/4d1e1fc1-3c8d-4820-8b56-b9bd56c73188)
+
+Here is where we are going to add our inputs.conf file.
+
+-------------------------------------------------------------------------------------------
+
+![Screenshot (288)](https://github.com/user-attachments/assets/acecb4ad-9e5a-427e-abb1-9705257521ed)
+
+Head to the start menu and search for Notepad. Right Click and Open as Administrator.
+
+---------------------------------------------------------------------------------------------
+
+![Screenshot (319)](https://github.com/user-attachments/assets/1a8566b4-2f42-48ac-9ec8-37cb49d3fc22)
+
+I will include my inputs.conf file HERE for you to copy and paste. Now save as, and make sure you save it into Prgram Files > SplunkUniversalForwarder > etc > system > local. Also make sure you dont save it as a text file and save it as a .config file.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (298)](https://github.com/user-attachments/assets/b6804ddc-7455-4a34-8660-8ecb13dce6a7)
+
+Whenever you edit the inputs.config file we need to restart the Universal Forwarding service. Click the start menu and search for Services right click and run it as administrator.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (299)](https://github.com/user-attachments/assets/21dff919-5b9f-48ba-8584-396d71ad7622)
+
+Scroll down until you find SplunkForwarder and click restart on the left side of the services window. You may sometimes get an error saying it can't be stopped just click OK and Click Start.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (302)](https://github.com/user-attachments/assets/f3522c1f-c83b-4e17-a26c-bd3774e04d90)
+
+Now we'll head to our splunk webserver and login. We are goong to configure splunk to recieve the log files we defined in the inputs.config file.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (304)](https://github.com/user-attachments/assets/249657de-b70b-45f5-be7b-98351353fb78)
+
+Once we login we will click on settings in the top right corner and click on indexes.
+
+-----------------------------------------------------------------------------------------------
+
+
+![Screenshot (305)](https://github.com/user-attachments/assets/69ee73e4-c7af-462a-9f57-038f19f9cbbf)
+
+Indexes are essentially labels to be searched for in a splunk query and a way to label our events. If we use WinEventLog://Security for example it an index that is win_security so if we search for it in the future in a query we can define what we're looking for by searching for that index.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (306)](https://github.com/user-attachments/assets/2137021f-0916-4e33-b701-2468420a73d4)
+
+
+In the top right corner click on New Index and add the name of you index. We will use the Index win_security for this example.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (307)](https://github.com/user-attachments/assets/97868127-1bac-43fa-9810-2a943c7c06f0)
+
+As you can see win_secuirty has been added to our index list. I will now add the remainder of our indexes we have added to our inputs.config file.
+
+----------------------------------------------------------------------------------------------
+
+![Screenshot (308)](https://github.com/user-attachments/assets/e246f408-77e5-4b80-a31c-cefc0902c750)
+
+We have now added all our new indexes.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (313)](https://github.com/user-attachments/assets/272ae59b-a8dd-43a4-a41e-55c8a6d7312d)
+
+
+Click Settings in the top right corner and select forwarding and receiving.  
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (314)](https://github.com/user-attachments/assets/5cee1d0a-a588-4b6e-bf75-d7e096ff1612)
+
+Click on configure recieving. Now we will be able to set the port our splunk server will be listening to recieve data from the Universal Forwarder.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (315)](https://github.com/user-attachments/assets/11db3319-1a1c-498a-9266-cc7b6d2cd9d7)
+
+If you remember we set it to 9997 the defualt port when we were configuring our Universal Fowarder. Click Save. 
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (320)](https://github.com/user-attachments/assets/291a53a4-6826-4743-956d-8c962e59078f)
+
+
+Click on Apps in the top right corner and select Search & Reporting
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (321)](https://github.com/user-attachments/assets/72376ece-2817-4bd7-9a59-f00074f504bc)
+
+Now we have everything configured we are able to enter the query index="win_app" and click search.
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (322)](https://github.com/user-attachments/assets/18dc9c1f-82c4-42a2-814f-baa864b80956)
+
+Our query brings up Event logs. 
+
+-----------------------------------------------------------------------------------------------
+
+![Screenshot (323)](https://github.com/user-attachments/assets/596752eb-7e66-456b-8636-b0bdbe719192)
+
+If we take a closer look at the event log we can see the 
+LogName = Application
+The host it came from which is DC.githubdomain.com
+As well as a Source and a Source Type. 
+Our configuration has been a Success and we now have event logs being sent to our Splunk Server.
