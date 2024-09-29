@@ -1,9 +1,12 @@
 # SPLUNK & SYSMON CONFIGURATION
 
-## Summary
-In this lab, I successfully set up an internal network using VirtualBox with a Domain Controller managing DHCP, and installed Ubuntu 24.04.1 Server as a dedicated Splunk server. The lab involved installing Splunk Enterprise on the Ubuntu server via the command line, configuring a static IP address through the netplan utility, and ensuring seamless communication with the Domain Controller for DNS and routing. I also demonstrated how to secure access by changing user permissions and utilized the web interface for Splunk to confirm the installation was operational. Additionally, OpenSSH was installed for future remote access purposes.
+## Splunk Summary
+In this lab, I successfully installed Ubuntu 24.04.1 as a dedicated Splunk server. It involved installing Splunk Enterprise on the Ubuntu server via the command line, configuring a static IP address through the netplan utility, and ensuring connection with the Domain Controller for DNS and routing. I also demonstrated how to secure access by changing user permissions and utilized the web interface for Splunk to confirm the installation was succesful.
 
-Once the Splunk server was operational, I configured a Windows machine with the Splunk Universal Forwarder to collect logs and send them to the Splunk server. This setup is ideal for real-time log analysis and monitoring. I ensured all configurations followed best practices, including static IP assignment, proper account privileges, and user authentication. This lab provided a hands-on demonstration of setting up a SIEM tool in a virtualized environment, showcasing my abilities to work with Splunk, Linux server environments, and network configuration.
+Once the Splunk server was running, I configured the Domain Controller with the Splunk Universal Forwarder to collect logs and send them to the Splunk server. This setup is ideal for real-time log analysis and monitoring. I ensured all configurations followed best practices, including static IP assignment, proper account privileges, and user authentication. This lab provided a hands-on demonstration of setting up a SIEM tool, showcasing my abilities to work with Splunk, Linux server environments, and network configuration.
+
+## Sysmon Summary
+
 
 ### Skills Learned
 [Bullet Points - Remove this afterwards]
