@@ -24,5 +24,6 @@ In this lab, I successfully installed Sysmon on a Domain Controller. The lab beg
 
 ## Step By Step
 
-<a href="">LAB</a>
-<a href="">LAB</a>
+<a href="https://github.com/karamkamal1/Splunk_and_Sysmon_Configuration_/blob/cb72125f31c23e9d35888fa55200732d19dbb7c0/step_by-step_splunk_configuration.md">SPLUNK LAB</a>
+
+<a href="https://github.com/karamkamal1/Splunk_and_Sysmon_Configuration_/blob/cb72125f31c23e9d35888fa55200732d19dbb7c0/step_by_step_sysmon_configuration.md">SYSMON LAB</a>
