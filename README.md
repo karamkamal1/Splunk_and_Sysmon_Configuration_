@@ -28,3 +28,6 @@ In this lab, I successfully installed Sysmon on a Domain Controller. The lab beg
 <a href="https://github.com/karamkamal1/Splunk_and_Sysmon_Configuration_/blob/cb72125f31c23e9d35888fa55200732d19dbb7c0/step_by-step_splunk_configuration.md">SPLUNK LAB</a>
 
 <a href="https://github.com/karamkamal1/Splunk_and_Sysmon_Configuration_/blob/cb72125f31c23e9d35888fa55200732d19dbb7c0/step_by_step_sysmon_configuration.md">SYSMON LAB</a>
+
+<a href="https://github.com/karamkamal1/Splunk_and_Sysmon_Configuration_/blob/3b9534c8fe3334d8e153ddc89ee9a8453fbae61d/Splunk_inputs_conf">SPLUNK INPUTS.CONF</a>
+
