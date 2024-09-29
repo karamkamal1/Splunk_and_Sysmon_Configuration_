@@ -1,9 +1,9 @@
 # SPLUNK & SYSMON CONFIGURATION
-This is my experience on configuring a Splunk Server, as well as configuring a Splunk Universal Port forwarder on a Domain Controller.  We will also utilize some simple attacks on a Kali machine to generate some malicious logs to analyze.
 
-## Objective
+## Summary
+In this lab, I successfully set up an internal network using VirtualBox with a Domain Controller managing DHCP, and installed Ubuntu 24.04.1 Server as a dedicated Splunk server. The lab involved installing Splunk Enterprise on the Ubuntu server via the command line, configuring a static IP address through the netplan utility, and ensuring seamless communication with the Domain Controller for DNS and routing. I also demonstrated how to secure access by changing user permissions and utilized the web interface for Splunk to confirm the installation was operational. Additionally, OpenSSH was installed for future remote access purposes.
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+Once the Splunk server was operational, I configured a Windows machine with the Splunk Universal Forwarder to collect logs and send them to the Splunk server. This setup is ideal for real-time log analysis and monitoring. I ensured all configurations followed best practices, including static IP assignment, proper account privileges, and user authentication. This lab provided a hands-on demonstration of setting up a SIEM tool in a virtualized environment, showcasing my abilities to work with Splunk, Linux server environments, and network configuration.
 
 ### Skills Learned
 [Bullet Points - Remove this afterwards]
@@ -21,7 +21,7 @@ The Detection Lab project aimed to establish a controlled environment for simula
 - Network analysis tools (such as Wireshark) for capturing and examining network traffic.
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
 
-## Steps
+## 
 drag & drop screenshots here or use imgur and reference them using imgsrc
 
 Every screenshot should have some text explaining what the screenshot is about.
