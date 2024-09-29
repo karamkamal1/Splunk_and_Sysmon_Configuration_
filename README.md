@@ -6,11 +6,10 @@ In this lab, I successfully installed Ubuntu 24.04.1 as a dedicated Splunk serve
 Once the Splunk server was running, I configured the Domain Controller with the Splunk Universal Forwarder to collect logs and send them to the Splunk server. This setup is ideal for real-time log analysis and monitoring. I ensured all configurations followed best practices, including static IP assignment, proper account privileges, and user authentication. This lab provided a hands-on demonstration of setting up a SIEM tool, showcasing my abilities to work with Splunk, Linux server environments, and network configuration.
 
 ## Sysmon Summary
+In this lab, I successfully installed Sysmon on a Domain Controller. The lab began with downloading Sysmon from the internet, extracting the files, and preparing for installation. I was able to install a prebuilt configuration file (Olaf Sysmon Configuration) alongside syslog. I used PowerShell as an administrator to execute commands to install and configure both. This task not reinforced my understanding of how Sysmon can be installed and configured. 
 
 
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
-
 - Advanced understanding of SIEM concepts and practical application.
 - Proficiency in analyzing and interpreting network logs.
 - Ability to generate and recognize attack signatures and patterns.
@@ -24,11 +23,6 @@ Once the Splunk server was running, I configured the Domain Controller with the 
 - Network analysis tools (such as Wireshark) for capturing and examining network traffic.
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
 
-## 
-drag & drop screenshots here or use imgur and reference them using imgsrc
+## Step By Step
 
-Every screenshot should have some text explaining what the screenshot is about.
-
-Example below.
-
-*Ref 1: Network Diagram*
+<a/>href"www.google.com"[link]<a/>
