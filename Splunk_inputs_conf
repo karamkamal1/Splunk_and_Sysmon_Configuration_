@@ -15,6 +15,38 @@ disabled = 0
 index = win_events
 host = winserver2019-1 
 
+[WinEventLog://Application]
+index = win_events
+disabled = 0
+
+[WinEventLog://System]
+index = win_system
+disabled = 0
+
+[WinEventLog://Security]
+index = win_security
+disabled = 0
+evt_resolve_ad_obj = 1
+
+[WinEventLog://Microsoft-Windows-DNSServer/Analytical]
+index = dns_logs
+disabled = 0
+
+[WinEventLog://Directory Service]
+index = ad_logs
+disabled = 0
+
+[WinEventLog://Microsoft-Windows-PowerShell/Operational]
+index = powershell_logs
+disabled = 0
+
+[WinEventLog://Microsoft-Windows-TaskScheduler/Operational]
+index = scheduler_logs
+disabled = 0
+
+[WinEventLog://Microsoft-Windows-User Profiles Service/Operational]
+index = user_profiles
+disabled = 0
 # ---------------------------------------
 # Monitoring Files and Directories
 # ---------------------------------------
